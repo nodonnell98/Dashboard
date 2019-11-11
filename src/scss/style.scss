@@ -1,0 +1,94 @@
+$primary-color: #01796F;
+$accent-color: rgb(3, 155, 142);
+$contentBorder-color: #5FDBA7;
+$shadow-color: #6e8a7b;
+$bodybackground-image: url('../assets/forest.jpg');
+//jade:#00A86B, mint:#5FDBA7, original: #72a57d, pine:#01796F, sea: #2E8B57
+:export{
+  nav-color: $primary-color;
+  contentBorder-color: $contentBorder-color;
+  shadow-color: $shadow-color;
+  bodybackground-image: $bodybackground-image;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('./animation.scss');
+@import url('./column.scss');
+
+
+
+body{
+  background-image: $bodybackground-image;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+button{
+  background-color: $accent-color;
+}
+
+nav{
+  background-color: $primary-color;
+  opacity: 1;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 10%;
+  z-index: 1; 
+  color: white;  
+  border-bottom: 3px $contentBorder-color solid;
+}
+
+
+
+#title{
+  font-family: 'Courgette', cursive; 
+  flex-grow: 1;
+  text-align: center;
+}
+
+article{
+  background-color: $primary-color;
+  opacity: 0.95;  
+  box-shadow: 
+        0px 11px 8px -10px $shadow-color,
+        0px -11px 8px -10px $shadow-color; 
+  transition: transform 1000ms, box-shadow 1000ms; 
+  animation: flipInX 1s;  
+  color: white;
+  border-top: 5px solid $contentBorder-color;
+  border-bottom: 5px solid $contentBorder-color;
+  border-radius: 5px;
+  margin-top: 2.5%;
+  margin-left: 3%;
+
+
+  text-align: center;  
+
+}
+
+article:hover{
+  box-shadow: 
+        0px 11px 25px -10px $shadow-color,
+        0px -11px 25px -10px $shadow-color; 
+  transform: scale(1.05);
+  transition: transform, 200ms, box-shadow 200ms;
+}
+
+
+
+#navLinks{
+  text-align: center;
+}
+
+.navLink{
+  margin: 2%;
+  }
+
+.navLink:hover{
+  opacity: 0.8;
+  cursor: pointer;  
+}
+
+
