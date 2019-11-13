@@ -1,13 +1,34 @@
+
+
 # Dashboard
-This is a test dashboard for practicing new web technologies.
+This is a test dashboard for practicing new web technologies and techniques using HTML, CSS and Typescript as well as the 
+bundler Webpack.
 
-Technologies:
+### Required dependencies 
+You must have **NodeJS** installed so that you are able to use node package managager to download the dependencies.
 
-This Dashboard has been created with HTML, SCSS, TypeScript, NodeJS and Webpack.
+The dependencies that this program requries are:
+* ts-loader": ^6.2.0,
+* typescript: ^3.6.4
+* webpack": "^4.41.2
+* webpack-cli: ^3.3.9,
+* webpack-dev-server: ^3.8.2
 
-This is my first look at using a bundler like Webpack and so was a new learning expereience. It has also been a chance for me to 
-try out creating a more responsive website with the use of flexbox.
+## Build setup
 
-To find the dependencies please look at the package.json file.
+``` bash
+# Install dependencies
+npm install
+
+# Open in a browser
+npm run start
+
+```
+
+
+
+
+
+
 
 
