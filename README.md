@@ -1,7 +1,7 @@
 
 
 # Dashboard
-This is a test dashboard for practicing new web technologies and techniques using HTML, CSS and Typescript as well as the 
+This is my test dashboard for practicing new web technologies and techniques using HTML, CSS and Typescript as well as the 
 bundler Webpack.
 
 ### Required dependencies 
